@@ -1,13 +1,49 @@
 # AskMyLogs 🔍
 
-> **Unified Observability Platform with Natural Language Querying**
+> **⚠️ Project Status: Ideation & Early Development**
+>
+> AskMyLogs is currently in the ideation and planning phase. The platform is not yet built, and all features described below are part of our vision for the future. We are actively exploring technologies, gathering feedback, and defining the minimum viable product (MVP). If you are interested in shaping the direction of AskMyLogs, your input is welcome!
 
-Transform your observability chaos into intelligent insights. AskMyLogs is a self-hosted enterprise platform that connects your existing observability tools and lets you query them using natural language, powered by AI and MCP (Model Context Protocol).
+## 🌟 Project Vision: AskMyLogs
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/release/python-3110/)
-[![Docker](https://img.shields.io/badge/Docker-ready-blue.svg)](https://www.docker.com/)
-[![Enterprise](https://img.shields.io/badge/Enterprise-Ready-green.svg)](#enterprise-features)
+AskMyLogs is an ambitious project in its ideation phase, aiming to revolutionize how organizations interact with their observability data. The core idea is to create a unified, AI-powered platform that bridges the gap between complex observability tools and the natural language queries of engineers, SREs, and DevOps teams.
+
+### Why AskMyLogs?
+
+Modern cloud-native systems generate massive amounts of logs, metrics, and traces. However, extracting actionable insights from this data is often challenging due to:
+- Fragmented tools and dashboards
+- Steep learning curves for query languages
+- Siloed knowledge across teams
+- Slow incident response and root cause analysis
+
+AskMyLogs envisions a world where anyone can simply “ask” about their system’s health, performance, or incidents—no matter which tools or data sources are in use.
+
+### What Makes AskMyLogs Unique?
+
+- **Natural Language Interface:** Users interact with the platform using plain English (or other languages in the future), lowering the barrier for troubleshooting and analysis.
+- **Unified Data Model:** Aggregates and normalizes data from various observability tools (Grafana, DataDog, Splunk, Elastic, etc.) into a single, queryable platform.
+- **AI-Powered Insights:** Leverages large language models and custom ML to correlate events, detect anomalies, and suggest remediations.
+- **Plugin Architecture:** Easily extensible to support new tools and data sources as the observability landscape evolves.
+- **Self-Hosted & Secure:** Designed for enterprise needs, ensuring data privacy and compliance.
+
+### Ideation Goals
+
+During this phase, the focus is on:
+- **Validating the Problem:** Engaging with potential users to understand their pain points with current observability workflows.
+- **Defining the MVP:** Outlining the minimum set of features that deliver value, such as basic natural language querying and integration with a few popular tools.
+- **Exploring Technologies:** Researching the best approaches for data ingestion, normalization, and natural language processing.
+- **Community Feedback:** Gathering input from engineers, SREs, and DevOps professionals to shape the product roadmap.
+
+### How You Can Help
+
+- **Share Your Observability Challenges:** What’s hardest about your current setup?
+- **Suggest Features:** What would make observability effortless for you?
+- **Join the Discussion:** Help us prioritize integrations, features, and use cases.
+
+---
+
+**AskMyLogs is more than a tool—it’s a vision for the future of observability.**  
+If you’re interested in shaping this journey, your feedback and ideas are invaluable!
 
 ## 🎯 Problem Statement
 
@@ -79,95 +115,7 @@ AskMyLogs provides a unified interface where engineers can:
 └─────────────────┴─────────────────┴─────────────────────────────┘
 ```
 
-## 🎮 Quick Start
-
-### Prerequisites
-- Docker & Docker Compose
-- Python 3.11+
-- Node.js 18+
-- PostgreSQL 15+
-- Redis 7+
-
-### Installation
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/askmylogs.git
-   cd askmylogs
-   ```
-
-2. **Environment Setup**
-   ```bash
-   cp .env.example .env
-   # Edit .env with your configuration
-   ```
-
-3. **Start with Docker Compose**
-   ```bash
-   docker-compose up -d
-   ```
-
-4. **Access the Platform**
-   - Web UI: http://localhost:3000
-   - API: http://localhost:8080
-   - Admin Panel: http://localhost:3000/admin
-
-### First Steps
-
-1. **Connect Your First Tool**
-   - Navigate to Settings → Integrations
-   - Add your Grafana instance
-   - Test the connection
-
-2. **Configure Your Services**
-   - Define your microservices
-   - Map them to observability data sources
-   - Set up service dependencies
-
-3. **Ask Your First Question**
-   ```
-   "Show me errors in the payment service from the last hour"
-   "Why is my API response time increasing?"
-   "What caused the spike in database connections?"
-   ```
-
-## 🔧 Supported Integrations
-
-### Currently Supported
-- **Grafana** (Prometheus, Loki, Alertmanager)
-- **DataDog** (Logs, Metrics, Traces)
-- **New Relic** (APM, Infrastructure)
-- **Splunk** (Enterprise Search)
-- **Elastic** (Elasticsearch, Kibana)
-
-### Coming Soon
-- **Honeycomb** (Observability for complex systems)
-- **Jaeger** (Distributed tracing)
-- **Prometheus** (Direct integration)
-- **AWS CloudWatch** (AWS native monitoring)
-- **Azure Monitor** (Azure native monitoring)
-
-## 📖 Documentation
-
-### User Guides
-- [Getting Started](./docs/getting-started.md)
-- [Service Configuration](./docs/service-configuration.md)
-- [Natural Language Queries](./docs/natural-language-queries.md)
-- [Dashboard Creation](./docs/dashboard-creation.md)
-
-### Developer Guides
-- [Plugin Development](./docs/plugin-development.md)
-- [API Reference](./docs/api-reference.md)
-- [Contributing](./docs/contributing.md)
-- [Architecture Deep Dive](./docs/architecture.md)
-
-### Operations
-- [Deployment Guide](./docs/deployment.md)
-- [Security Configuration](./docs/security.md)
-- [Monitoring & Observability](./docs/monitoring.md)
-- [Troubleshooting](./docs/troubleshooting.md)
-
-## 🧪 Example Use Cases
+## Example Use-cases
 
 ### Incident Response
 ```
@@ -230,23 +178,7 @@ Recommended prep: Scale database and payment service by Nov 20"
 - **Business Intelligence**: Connect observability to business metrics
 - **Custom Dashboards**: Build dashboards for executives and stakeholders
 
-## 🛠️ Development
 
-### Running Tests
-```bash
-# Backend tests
-pytest backend/tests/
-
-# Frontend tests
-npm test
-
-# Integration tests
-docker-compose -f docker-compose.test.yml up
-```
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guide](./CONTRIBUTING.md) for details.
 
 ### Development Philosophy
 - **Plugin First**: Every new tool should be a plugin
