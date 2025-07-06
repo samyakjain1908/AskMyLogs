@@ -232,32 +232,6 @@ Recommended prep: Scale database and payment service by Nov 20"
 
 ## 🛠️ Development
 
-### Local Development Setup
-
-1. **Backend Setup**
-   ```bash
-   cd backend
-   python -m venv venv
-   source venv/bin/activate
-   pip install -r requirements.txt
-   python manage.py migrate
-   python manage.py runserver
-   ```
-
-2. **Frontend Setup**
-   ```bash
-   cd frontend
-   npm install
-   npm run dev
-   ```
-
-3. **Plugin Development**
-   ```bash
-   cd plugins
-   python create_plugin.py --name my-tool
-   # Edit plugins/my-tool/plugin.py
-   ```
-
 ### Running Tests
 ```bash
 # Backend tests
@@ -270,42 +244,9 @@ npm test
 docker-compose -f docker-compose.test.yml up
 ```
 
-## 📊 Roadmap
-
-### Q1 2025
-- [x] Core platform with plugin architecture
-- [x] Grafana plugin with full feature parity
-- [x] Natural language query engine
-- [x] Basic dashboard functionality
-
-### Q2 2025
-- [ ] DataDog and New Relic plugins
-- [ ] Advanced alert correlation
-- [ ] Mobile-responsive UI
-- [ ] API for third-party integrations
-
-### Q3 2025
-- [ ] Predictive analytics and ML models
-- [ ] Advanced RBAC and multi-tenancy
-- [ ] Slack/Teams integration
-- [ ] Custom plugin marketplace
-
-### Q4 2025
-- [ ] SaaS offering (cloud-hosted option)
-- [ ] Advanced business intelligence features
-- [ ] White-label solutions
-- [ ] Enterprise support tier
-
 ## 🤝 Contributing
 
 We welcome contributions! Please see our [Contributing Guide](./CONTRIBUTING.md) for details.
-
-### Ways to Contribute
-- **Plugin Development**: Add support for new observability tools
-- **Feature Development**: Implement new platform features
-- **Documentation**: Improve docs and examples
-- **Bug Reports**: Help us identify and fix issues
-- **Testing**: Write tests and improve test coverage
 
 ### Development Philosophy
 - **Plugin First**: Every new tool should be a plugin
@@ -315,31 +256,15 @@ We welcome contributions! Please see our [Contributing Guide](./CONTRIBUTING.md)
 
 ## 🙋 Support
 
-### Community Support
-- **GitHub Issues**: [Report bugs and request features](https://github.com/yourusername/askmylogs/issues)
-- **Discord**: [Join our community](https://discord.gg/askmylogs)
-- **Documentation**: [Comprehensive guides](https://docs.askmylogs.com)
-
 ### Enterprise Support
 - **Professional Services**: Implementation and customization
 - **24/7 Support**: Priority support with SLA
 - **Training**: On-site training for your team
 - **Custom Development**: Bespoke features and integrations
 
-Contact: enterprise@askmylogs.com
-
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
-
-
-<!-- ## 🔗 Links
-
-- **Website**: [https://askmylogs.com](https://askmylogs.com)
-- **Documentation**: [https://docs.askmylogs.com](https://docs.askmylogs.com)
-- **Blog**: [https://blog.askmylogs.com](https://blog.askmylogs.com)
-- **Twitter**: [@AskMyLogs](https://twitter.com/askmylogs)
-- **LinkedIn**: [AskMyLogs](https://linkedin.com/company/askmylogs) -->
+This project is licensed under the MIT License.
 
 ---
 
